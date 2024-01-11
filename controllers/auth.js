@@ -45,7 +45,7 @@ const crearUsuario = async (req, res = response) => {
 
 const login = async (req, res = response) => {
   const { email, password } = req.body;
-  console.log({ email, password });
+  console.warn({ email, password });
   // return req;
   try {
     const usuario = await Usuario.findOne({ email });
